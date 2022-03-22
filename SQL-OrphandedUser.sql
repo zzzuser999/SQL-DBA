@@ -26,3 +26,7 @@ EXEC dbo.sp_change_users_login
 @Action          = 'update_one', 
 @UserNamePattern = 'ABBEpmTools_prod_reader', 
 @LoginName       = 'ABBEpmTools_prod_reader';
+
+/* Other method
+EXEC sp_change_users_login 'Auto_Fix', '%USER%'
+*/ 
